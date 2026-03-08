@@ -13,5 +13,5 @@ RUN cd server && npm install
 COPY server/ ./server/
 COPY --from=client-builder /app/client/dist ./client/dist
 
-EXPOSE 3000
+EXPOSE 3005
 CMD ["node", "server/index.js"]
